@@ -29,7 +29,7 @@ O sistema utiliza medidas de similaridade de cosseno para encontrar filmes semel
 
 1. Clone este repositório:
 ```bash
-git clone https://github.com/seu-usuario/movie-recommendation-system.git
+git clone https://github.com/ilobodossantos3-cloud/movie-recommendation-system.git
 cd movie-recommendation-system
 ```
 
@@ -124,8 +124,8 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ## 👤 Autor
 
-**Seu Nome**
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
+**Igor Santos**
+- GitHub: [ilobodossantos3-cloud](https://github.com/ilobodossantos3-cloud)
 
 ## 🙏 Agradecimentos
 
