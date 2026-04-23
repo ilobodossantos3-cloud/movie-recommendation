@@ -1,0 +1,53 @@
+.webview-container {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.webview-empty,
+.webview-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+.webview-empty h2,
+.webview-error h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.webview-empty p,
+.webview-error p {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.webview-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+}
+
+.placeholder-content {
+  text-align: center;
+  padding: 40px;
+}
+
+.placeholder-content h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.placeholder-content p {
+  color: var(--text-secondary);
+  margin: 8px 0;
+}
