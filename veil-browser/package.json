@@ -1,7 +1,7 @@
 {
   "name": "veil-browser",
   "version": "0.1.0",
-  "description": "A privacy-focused, highly customizable web browser",
+  "description": "Privacy-focused web browser with AI-powered protection",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,19 +13,17 @@
     "tauri:build": "tauri build"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "zustand": "^4.4.7",
-    "axios": "^1.6.2",
-    "lucide-react": "^0.294.0",
-    "react-router-dom": "^6.21.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.2",
+    "@tauri-apps/api": "^1.6.0"
   },
   "devDependencies": {
-    "@tauri-apps/api": "^1.5.2",
-    "@tauri-apps/cli": "^1.5.8",
-    "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.18",
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.0.8"
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.2",
+    "@tauri-apps/cli": "^1.6.0",
+    "typescript": "^5.5.4",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0"
   }
 }

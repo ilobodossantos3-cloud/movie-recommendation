@@ -1,60 +1,83 @@
-# Veil Browser
+# 🛡️ Veil Browser
 
-A modern, privacy-focused web browser inspired by DuckDuckGo, with extreme customization and user control.
+A privacy-focused web browser with AI-powered protection, built with Tauri, React, and Python.
 
-## 🛡️ Core Features
+## Features
 
-- **Privacy-first**: No tracking, no telemetry, built-in ad & tracker blocker
-- **Extreme Customization**: Full UI control, configurable search engines, modular features
-- **Advanced User Control**: Granular permissions, real-time visibility, enhanced DevTools
-- **High Performance**: Lightweight, efficient memory usage, multi-process architecture
-- **Security**: Sandboxing, automatic HTTPS, malicious site warnings
-- **Cross-platform**: Windows, macOS, Linux, Android, iOS
+- **Privacy First**: No tracking, no telemetry by default
+- **Built-in Ad Blocker**: Block ads and trackers automatically
+- **AI-Powered Analysis**: Real-time privacy risk assessment
+- **Transparency Dashboard**: See exactly what's being blocked
+- **Extreme Customization**: Full control over UI, themes, and behavior
+- **Cross-Platform**: Windows, macOS, Linux support
 
-## 🏗️ Architecture
+## Tech Stack
+
+- **Frontend**: React + Vite
+- **Backend**: Rust (Tauri)
+- **AI Service**: Python (FastAPI)
+- **State Management**: Zustand
+- **Package Manager**: pnpm
+
+## Project Structure
 
 ```
 veil-browser/
-├── python-service/          # AI Brain (FastAPI + ML analysis)
-├── src-tauri/               # Rust Backend (Tauri)
-├── src/                     # React Frontend
-├── config/                  # Configuration files
-├── extensions/              # Extension support
-├── scripts/                 # Development scripts
-├── docs/                    # Documentation
-└── assets/                  # Icons and logos
+├── src/                    # React frontend
+│   ├── components/         # UI components
+│   ├── pages/              # Page components
+│   ├── store/              # Zustand stores
+│   └── services/           # API services
+├── src-tauri/              # Rust backend
+│   ├── src/
+│   │   ├── commands/       # Tauri commands
+│   │   ├── privacy/        # Privacy features
+│   │   └── services/       # Backend services
+│   └── tauri.conf.json
+├── python-service/         # Python AI service
+│   ├── app/
+│   │   ├── routes/         # API endpoints
+│   │   └── services/       # Business logic
+│   └── requirements.txt
+└── config/                 # Configuration files
 ```
 
-## 🚀 Quick Start
+## Getting Started
 
 ### Prerequisites
 
 - Node.js 18+
 - Rust 1.70+
-- Python 3.10+
+- Python 3.9+
+- pnpm
 
 ### Installation
 
 ```bash
-# Install dependencies
-npm install
+# Install frontend dependencies
+pnpm install
 
-# Start development server
-./scripts/dev.sh
+# Install Python dependencies
+cd python-service
+pip install -r requirements.txt
+
+# Run development server
+pnpm tauri dev
 ```
 
-## 📖 Documentation
+### Development
 
-See [docs/architecture.md](docs/architecture.md) for detailed architecture information.
+```bash
+# Start frontend only
+pnpm dev
 
-## 🛠️ Tech Stack
+# Start Tauri app
+pnpm tauri dev
 
-- **Frontend**: React + Vite
-- **Backend**: Rust + Tauri
-- **AI Service**: Python + FastAPI
-- **State Management**: Zustand
-- **Styling**: CSS Modules / Styled Components
+# Build for production
+pnpm tauri build
+```
 
-## 📄 License
+## License
 
-MIT
+MIT License
