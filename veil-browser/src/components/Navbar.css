@@ -12,58 +12,84 @@
   gap: 4px;
 }
 
-.nav-controls button {
-  width: 32px;
-  height: 32px;
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.nav-btn:hover {
+  background: var(--bg-tertiary);
 }
 
 .url-bar {
   flex: 1;
   display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
 }
 
-.url-input {
-  width: 100%;
-  height: 36px;
-  padding: 0 16px;
-  border-radius: 18px;
-  border: 1px solid var(--border);
-  background: var(--bg-primary);
-  color: var(--text-primary);
+.security-indicator {
   font-size: 14px;
 }
 
-.url-input:focus {
-  border-color: var(--accent);
+.url-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 14px;
+  outline: none;
+}
+
+.shield-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.shield-btn:hover {
+  transform: scale(1.1);
   background: var(--bg-tertiary);
 }
 
 .nav-actions {
   display: flex;
-  gap: 8px;
+  gap: 4px;
 }
 
-.shield-btn,
-.menu-btn {
+.action-btn {
   width: 36px;
   height: 36px;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  font-size: 18px;
-  border-radius: 8px;
+  transition: background 0.2s;
 }
 
-.shield-btn:hover {
-  background: var(--accent);
-}
-
-.menu-btn:hover {
+.action-btn:hover {
   background: var(--bg-tertiary);
 }
